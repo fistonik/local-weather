@@ -1,8 +1,6 @@
 import React from "react";
-import {Col, Container, Navbar, Row} from "react-bootstrap";
-
-import "bootstrap/scss/bootstrap.scss";
-
+import {Navbar} from "react-bootstrap";
+import Weather from "../Weather/Weather";
 
 const App = () => {
   return (
@@ -10,13 +8,7 @@ const App = () => {
       <Navbar>
         UI Weather
       </Navbar>
-      <Container>
-        <Row>
-          <Col className="text-center">
-            <h1>Weather in $CITY</h1>
-          </Col>
-        </Row>
-      </Container>
+      <Weather />
     </main>
   )
 };
