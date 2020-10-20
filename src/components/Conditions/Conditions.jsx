@@ -3,7 +3,7 @@ import React from "react";
 
 const Conditions = (props) => {
   return (
-    <div>
+    <React.Fragment>
       {props.responseObj.cod === 200 ?
         <div>
           <img src={`http://openweathermap.org/img/wn/${props.responseObj.weather[0].icon}@2x.png`} />
@@ -15,7 +15,7 @@ const Conditions = (props) => {
         </div>
       : null
       }
-    </div>
+    </React.Fragment>
   )
 }
 
