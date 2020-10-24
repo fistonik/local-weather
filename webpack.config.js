@@ -32,8 +32,7 @@ module.exports = {
   },
   devServer: {
     contentBase: PUB,
-    historyApiFallback: true,
-    host: '192.168.31.8'
+    historyApiFallback: true
   },
   devtool: 'source-map',
   resolve: {
